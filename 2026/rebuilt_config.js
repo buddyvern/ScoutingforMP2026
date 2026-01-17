@@ -9,7 +9,7 @@ var config_data = `
   "code": "mt",
   "type": "timer",
   "tooltip": "coooool"
-}
+},
     { "name": "Scouter Initials",
       "code": "s",
       "type": "scouter",
