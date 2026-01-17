@@ -1,8 +1,8 @@
-var config_data = 
+var config_data = `
 {
   "dataFormat": "tsv",
   "title": "Scouting PASS 2026",
-  "page_title": "_____REBUILT____",
+  "page_title": "REBUILT",
   "checkboxAs": "10",
   "prematch": [
     { "name": "Scouter Initials",
@@ -11,7 +11,7 @@ var config_data =
       "size": 5,
       "maxSize": 5,
       "required": "true"
-     }, 
+    },
     { "name": "Event",
       "code": "e",
       "type": "event",
@@ -228,4 +228,4 @@ var config_data =
       "maxSize": 55
     }
   ]
-}
+}`;
