@@ -5,6 +5,11 @@ var config_data = `
   "page_title": "_____REBUILT____",
   "checkboxAs": "10",
   "prematch": [
+  { "name": "BOOOOO",
+  "code": "mt",
+  "type": "timer",
+  "tooltip": "coooool"
+}
     { "name": "Scouter Initials",
       "code": "s",
       "type": "scouter",
