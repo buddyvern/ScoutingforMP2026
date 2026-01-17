@@ -55,7 +55,7 @@ var config_data = `
       "min": 1,
       "max": 99999
     },
-    { "name": "Auto Start Position",
+    { "name": "Auto Start Location",
       "code": "as",
       "type": "clickable_image",
       "filename": "2026/half_field.png",
@@ -66,8 +66,8 @@ var config_data = `
     }
   ],
   "auton": [
-    { "name": "Auto Scoring Position",
-      "code": "asp",
+    { "name": "Auto Shooting Location",
+      "code": "asl",
       "type": "clickable_image",
       "filename": "2026/half_field.png",
       "dimensions": "7 10",
@@ -102,8 +102,8 @@ var config_data = `
     }
   ],
   "teleop": [
-    { "name": "Auto Scoring Position",
-      "code": "tsp",
+    { "name": "Shooting Locations",
+      "code": "tsl",
       "type": "clickable_image",
       "filename": "2026/half_field.png",
       "dimensions": "7 10",
@@ -124,6 +124,14 @@ var config_data = `
     },
     { "name": "Pickup from Floor",
       "code": "tff",
+      "type": "bool"
+    },
+    { "name": "Pass from Neutral Zone",
+      "code": "pnz",
+      "type": "bool"
+    },
+    { "name": "Pass from Opp<br>Alliance Zone",
+      "code": "poa",
       "type": "bool"
     }
   ],
@@ -185,10 +193,6 @@ var config_data = `
       "code": "tre",
       "type": "bool"
     },
-    { "name": "Wallbot?",
-      "code": "wbt",
-      "type": "bool"
-    },
     { "name": "Died/Immobilized",
       "code": "die",
       "type": "bool"
@@ -201,6 +205,21 @@ var config_data = `
       "tooltip": "Would you want this robot on your alliance in eliminations?",
       "code": "all",
       "type": "bool"
+    },
+    { "name": "Was Defended",
+      "code": "def",
+      "type": "bool"
+    },
+    { "name": "Excessive Penalties",
+      "code": "pen",
+      "type": "bool"
+    },
+    { "name": "Fuel Percentage",
+      "tooltip": "What percentage of the total fuel for this alliance did this robot score?",
+      "code": "pct",
+      "type": "number",
+      "min": 0,
+      "max": 100
     },
     { "name": "Comments",
       "code": "co",
